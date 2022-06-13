@@ -47,6 +47,7 @@ public class BurgerTest {
         Ingredient secondIngredient = Mockito.mock(Ingredient.class);
         burger.addIngredient(secondIngredient);
         burger.moveIngredient(0, 1);
+        assertEquals(firstIngredient, burger.ingredients.get(1));
     }
 
     @Test
