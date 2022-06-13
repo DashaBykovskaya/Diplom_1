@@ -9,6 +9,7 @@ import praktikum.Burger;
 import praktikum.Ingredient;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 @RunWith(MockitoJUnitRunner.class)
 public class BurgerTest {
@@ -37,7 +38,7 @@ public class BurgerTest {
     public void removeIngredientTest() {
         burger.ingredients.add(0, ingredient);
         burger.removeIngredient(0);
-        assertEquals(true, burger.ingredients.isEmpty());
+        assertTrue(burger.ingredients.isEmpty());
     }
 
     @Test
